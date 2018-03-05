@@ -1,0 +1,182 @@
+body * {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  background: url('http://sportsagentblog.com/wp-content/uploads/2017/04/nba-logo-on-wood.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+#container {
+  height: 100%;
+}
+
+h1 {
+  font-family: Brush Script MT;
+}
+
+h2 {
+  font-family: Impact;
+}
+
+p {
+  font-family: Brush Script MT;
+}
+
+h1, h2, p {
+  text-align: center;
+  background-color: rgba(255, 255, 255, .4);
+ 
+  
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+p {
+  font-size: 1.4em;
+}
+
+#start-page {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between
+}
+
+button {
+  display: block;
+  min-height: 80px;
+  min-width: 80px;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+  border: none;
+  background-color: #d16e27;
+  color: #ffedfc;
+  border-radius: 5px;
+  padding: .5em 1em;
+  width: 60%;
+  max-width: 200px;
+}
+
+button:hover {
+  background-color:#d1bd27;
+  cursor: pointer;
+}
+
+#question {
+  font-family: Palatino;
+}
+
+#question-page {
+  color: black;
+}
+
+
+fieldset {
+    border: none;
+}
+
+#status-bar {
+  color: white;
+  
+}
+
+
+.answer {
+  color: white;
+}
+
+
+#js-next-button {
+	margin: 1em auto;
+	font-family: Palatino;
+}
+
+#js-restart-button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 3em;
+}
+
+#js-submit-button {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+	font-family: Palatino;
+}
+
+
+
+@media only screen and (min-width: 650px) {
+	.feedback-page img {
+		display: block;
+		width: 450px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.feedback-page h2 {
+	  display: block;
+		width: 450px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0;
+	}
+
+
+
+form {
+		padding: 4em 7em 0;
+	}
+	
+
+	#question-count {
+		padding-left: 8em;
+		padding-bottom: 2.5em;
+	}
+
+	#score-count {
+		padding-right: 8em;
+		padding-bottom: 2.5em;
+	}
+}
+
+label {
+  color: black;
+  /*padding: 20px;
+  */
+}
+
+
+
+@media only screen and (max-width: 650px) {
+html {
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6w7g99pqeAtsDkM36BZeMa_hg4eueMPMujQiosKUo4ITtYyGj') no-repeat center center fixed;
+  background-size: cover;
+}
+}
+
+label {
+    display: flex;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
