@@ -136,6 +136,7 @@ function questionTemplate(correctAnswers, question, questionsAnswered) {
    
    <form>
      <fieldset>
+     <legend>
        <label for="${question.ans1}"> ${question.ans1} </label>
          <input id="${question.ans1}"class="answer" type="radio" name="option"> 
        <br>
@@ -147,7 +148,8 @@ function questionTemplate(correctAnswers, question, questionsAnswered) {
        <br>
         <label for="${question.ans4}"> ${question.ans4} </label>
          <input id="${question.ans4}" class="answer" type="radio" name="option"> 
-     </fieldset>
+    </legend>
+    </fieldset>
      <br>
      <button id="js-submit-button">Submit</button>
    </form>
@@ -180,7 +182,7 @@ function generateCorrectFeedback() {
 const correctFeedback = `
   <section class="feedback-page" role="main">
     <h2>Correct!</h2>
-    <img src="https://media.giphy.com/media/3oKIPo1a5JJPpSq9pu/giphy.gif">
+    <img src="https://media.giphy.com/media/3oKIPo1a5JJPpSq9pu/giphy.gif" role="presentation">
     <button id="js-next-button">Next</button>
   </section>
 `;
@@ -198,7 +200,7 @@ function incorrectFeedbackTemplate(questionNum) {
   return `
     <section class="feedback-page" role="main">
       <h2>Nope! It was ${ANSWERS[questionNum-1]}!</h2>
-      <img src="https://media.giphy.com/media/hC9YKQgNSkrF6/giphy.gif">
+      <img src="https://media.giphy.com/media/hC9YKQgNSkrF6/giphy.gif" role="none">
       <button id="js-next-button">Next</button>
     </section>
   `;
